@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/tvBack"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_arrow_back_24"/>
+    <LinearLayout
+        android:id="@+id/tvL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:text="Uch fazali tarmoqdagi nosimmetrik kuchlanishlarni aniqlash"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edAb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:hint="Uab"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:text="A va B fazalar orasidagi kuchlanish"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edBC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:hint="Ubc"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:text="B va C fazalar orasidagi kuchlanish"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:hint="Uac"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:text="A va C fazalar orasidagi kuchlanish"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEq"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cornerRadius="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Natijani olish"
+            android:layout_marginTop="32dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tvL1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Natija: "/>
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/black"
+            android:text=""/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
